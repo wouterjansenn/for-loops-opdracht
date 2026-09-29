@@ -6,10 +6,11 @@
 // ***
 // ****
 // *****
-
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen... Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
-
+for (let i = 1; i <= 5; i++) {
+    console.log('*'.repeat(i))
+}
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
@@ -20,7 +21,12 @@
 // loop...
 // klaar!
 // ==========================================
-
+for (let i = 1; i <= 5; i++)
+    if (i <= 4) {
+        console.log('Loop...')
+    } else if (i === 5) {
+        console.log('Klaar!')
+    }
 
 // ==========================================
 // Opdracht 3. Maak een for-loop die automatisch factuurnummers genereert in het formaat INV-0001, INV-0002, enzovoorts. Zorg ervoor dat je begint bij nummer 1 en dat de nummers oplopen. Er zijn in totaal 8 factuurnummers nodig.
@@ -34,6 +40,10 @@
 // 'INV-0006'
 // 'INV-0007'
 // 'INV-0008'
+
+for (let i = 1; i <= 8; i++) {
+    console.log('INV-000' + i)
+}
 
 // ==========================================
 
@@ -55,11 +65,27 @@
 // 17:00 Bijna klaar...
 // 18:00
 // ==========================================
-
+//
+for (let i = 9; i <= 18; i++)
+{const time = i + ':00'
+    if (i === 10){console.log((time) + ' ' + 'Koffiepauze!')}
+    else if (i === 12) {console.log((time) + ' ' + 'Lunchpauze!')}
+    else if (i === 14) {console.log((time) + ' ' + 'Koffiepauze!')}
+    else if (i === 17){console.log((time) + ' ' + 'Bijna klaar')}
+    else if (i === 9){console.log('0' + (time))}
+    else (console.log(i + ':00'))}
 
 // ==========================================
 // Opdracht 5. Maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
 // Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
+
+for (let i = 0; i <= 9; i++)
+{ if (i < 3) {console.log(i)}
+    else if (i < 6) {console.log('>' + ' ' + i)}
+    else if (i > 4) {console.log('>'.repeat(2) + ' ' + i)}
+
+}
+
 // Verwachte uitkomsten:
 // 0
 // 1
@@ -77,6 +103,13 @@
 // ==========================================
 // Opdracht 6 (BONUS). Schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
 // Echter, voor veelvouden van 3 print je "Fizz" in plaats van het nummer, en voor veelvouden van 5 print je "Buzz". Voor getallen die zowel een veelvoud van 3 als van 5 zijn, print je "FizzBuzz".
+
+for (i = 1; i <= 100; i++) {
+    if ((i % 3 === 0) && (i % 5 === 0)){console.log('FizzBuzz')}
+    else if (i % 3 === 0) {console.log('Fizz')}
+    else if (i % 5 === 0) {console.log('Buzz')}
+    else {console.log(i)}
+}
 
 // Verwachte uitkomsten:
 // 1
