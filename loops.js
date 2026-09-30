@@ -104,7 +104,7 @@ for (let i = 0; i <= 9; i++)
 // Opdracht 6 (BONUS). Schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
 // Echter, voor veelvouden van 3 print je "Fizz" in plaats van het nummer, en voor veelvouden van 5 print je "Buzz". Voor getallen die zowel een veelvoud van 3 als van 5 zijn, print je "FizzBuzz".
 
-for (i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     if ((i % 3 === 0) && (i % 5 === 0)){console.log('FizzBuzz')}
     else if (i % 3 === 0) {console.log('Fizz')}
     else if (i % 5 === 0) {console.log('Buzz')}
@@ -114,18 +114,6 @@ for (i = 1; i <= 100; i++) {
 // Verwachte uitkomsten:
 // 1
 // 2
-// Fizz
-// 4
-// Buzz
-// Fizz
-// 7
-// 8
-// Fizz
-// Buzz
-// 11
-// Fizz
-// 13
-// 14
 // FizzBuzz
 // 16
 // 17
