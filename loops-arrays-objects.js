@@ -15,16 +15,18 @@
 // 	'Beste Otis, je salaris van €2800,- is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.',
 // ==========================================
 
-// const salaryDetails = [
-// 	{name: 'Max', salary: 3200},
-// 	{name: 'Sophia', salary: 2350},
-// 	{name: 'Ali', salary: 2800},
-// 	{name: 'Nina', salary: 3500},
-// 	{name: 'Otis', salary: 2800}
-// ];
-for (let i = 0; i < salaryDetails.length; i++){
+const salaryDetails = [
+	{name: 'Max', salary: 3200},
+	{name: 'Sophia', salary: 2350},
+	{name: 'Ali', salary: 2800},
+	{name: 'Nina', salary: 3500},
+	{name: 'Otis', salary: 2800}
+];
+
+for (let i = 0; i < salaryDetails.length; i++)
 	console.log('Beste ' + salaryDetails[i].name + ',' + ' ' + 'je salaris van €' + salaryDetails[i].salary + ',-' + ' ' + 'is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.')
-}
+
+
 
 // ==========================================
 // Opdracht 2. Wanneer iemand een verlof-aanvraag doet, moet Bob eerst uit zijn hoofd uitrekenen of deze medewerker nog
@@ -39,12 +41,12 @@ for (let i = 0; i < salaryDetails.length; i++){
 // 	'Otis heeft nog 18 vakantiedagen over.',
 // ==========================================
 
-// const vacationDays = [
-// 	{name: 'Max', totalVacationDays: 25, usedVacationDays: 10},
-// 	{name: 'Sophia', totalVacationDays: 30, usedVacationDays: 15},
-// 	{name: 'Ali', totalVacationDays: 20, usedVacationDays: 18},
-// 	{name: 'Nina', totalVacationDays: 25, usedVacationDays: 5},
-// 	{name: 'Otis', totalVacationDays: 25, usedVacationDays: 7},
+const vacationDays = [
+	{name: 'Max', totalVacationDays: 25, usedVacationDays: 10},
+	{name: 'Sophia', totalVacationDays: 30, usedVacationDays: 15},
+	{name: 'Ali', totalVacationDays: 20, usedVacationDays: 18},
+	{name: 'Nina', totalVacationDays: 25, usedVacationDays: 5},
+	{name: 'Otis', totalVacationDays: 25, usedVacationDays: 7},
 ];
 for (let i = 0; i < vacationDays.length; i++) {
 	console.log(vacationDays[i].name + ' heeft nog ' +  (vacationDays[i].totalVacationDays - vacationDays[i].usedVacationDays) + ' vakantiedagen over.')
@@ -59,15 +61,15 @@ for (let i = 0; i < vacationDays.length; i++) {
 // Max: Leiderschapstraining
 // Ali: Communicatietraining
 // ==========================================
-//
-// const employeesInTraining = [
-// 	{name: 'Max', training: 'Leiderschapstraining', month: 'Januari'},
-// 	{name: 'Sophia', training: 'Projectmanagement', month: 'Februari'},
-// 	{name: 'Ali', training: 'Communicatietraining', month: 'Januari'},
-// 	{name: 'Nina', training: 'Teamworktraining', month: 'Maart'},
-// 	{name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
-// ];
-//
+
+const employeesInTraining = [
+	{name: 'Max', training: 'Leiderschapstraining', month: 'Januari'},
+	{name: 'Sophia', training: 'Projectmanagement', month: 'Februari'},
+	{name: 'Ali', training: 'Communicatietraining', month: 'Januari'},
+	{name: 'Nina', training: 'Teamworktraining', month: 'Maart'},
+	{name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
+];
+
 for (let i = 0; i < employeesInTraining.length; i++) {
 	if (employeesInTraining[i].month === 'Januari') console.log(employeesInTraining[i].name + ' ' + employeesInTraining[i].training)
 }
@@ -88,8 +90,8 @@ for (let i = 0; i < employeesInTraining.length; i++) {
 // 4%
 // 2%
 // 6%
-// ==========================================
-
+// // ==========================================
+//
 const scores = [
 	{name: 'Max', score: 83, salaryIncrease: null},
 	{name: 'Sophia', score: 77, salaryIncrease: null},
